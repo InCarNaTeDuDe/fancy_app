@@ -13,7 +13,7 @@
         }
 
         body {
-            background: #710c19;
+            background: #000;
         }
 
         section {
@@ -25,6 +25,7 @@
         }
 
         section h2 {
+            font-family: cursive;
             position: relative;
             width: 100%;
             height: 100vh;
@@ -32,6 +33,17 @@
             /* line-height: 100vh; */
             font-size: 10vw;
             color: #ffffff;
+            /* animation: animatetext 1s linear infinite; */
+            color: #fff;
+            text-shadow: 0 0 10px #00b3ff,
+                0 0 15px #00b3ff,
+                0 0 40px #00b3ff,
+                0 0 60px #00b3ff;
+        }
+
+        section h2 i {
+            color: goldenrod;
+            font-style: inherit;
         }
 
         .banner {
@@ -54,8 +66,9 @@
             animation-delay: 1s;
         }
 
-        @keyframes animate {
+        @-webkit-keyframes animate {
             0% {
+                -webkit-transform: translateZ(2000px);
                 transform: translateZ(2000px);
                 background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
                 background-position: center;
@@ -65,6 +78,101 @@
             }
 
             100% {
+                -webkit-transform: translateZ(0px);
+                transform: translateZ(0px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                border: 0 5px 15px rgba(0, 0, 0, .1);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+            }
+        }
+
+        @-moz-keyframes animate {
+            0% {
+                -webkit-transform: translateZ(2000px);
+                transform: translateZ(2000px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            }
+
+            100% {
+                -webkit-transform: translateZ(0px);
+                transform: translateZ(0px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                border: 0 5px 15px rgba(0, 0, 0, .1);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+            }
+        }
+
+        @-ms-keyframes animate {
+            0% {
+                -webkit-transform: translateZ(2000px);
+                transform: translateZ(2000px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            }
+
+            100% {
+                -webkit-transform: translateZ(0px);
+                transform: translateZ(0px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                border: 0 5px 15px rgba(0, 0, 0, .1);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+            }
+        }
+
+        @-o-keyframes animate {
+            0% {
+                -webkit-transform: translateZ(2000px);
+                transform: translateZ(2000px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            }
+
+            100% {
+                -webkit-transform: translateZ(0px);
+                transform: translateZ(0px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                border: 0 5px 15px rgba(0, 0, 0, .1);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+            }
+        }
+
+
+
+        @keyframes animate {
+            0% {
+                -webkit-transform: translateZ(2000px);
+                transform: translateZ(2000px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            }
+
+            100% {
+                -webkit-transform: translateZ(0px);
                 transform: translateZ(0px);
                 background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
                 background-position: center;
@@ -84,8 +192,9 @@
             border: 0 5px 15px rgba(0, 0, 0, .1);
         }
 
-        @keyframes animateTwo {
+        @-webkit-keyframes animateTwo {
             0% {
+                -webkit-transform: translateZ(0px);
                 transform: translateZ(0px);
                 background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
                 background-position: center;
@@ -95,6 +204,7 @@
             }
 
             100% {
+                -webkit-transform: translateZ(2000px);
                 transform: translateZ(2000px);
                 background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
                 background-position: center;
@@ -104,12 +214,128 @@
                 box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
             }
         }
+
+        @-moz-keyframes animateTwo {
+            0% {
+                -webkit-transform: translateZ(0px);
+                transform: translateZ(0px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            }
+
+            100% {
+                -webkit-transform: translateZ(2000px);
+                transform: translateZ(2000px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                border: 0 5px 15px rgba(0, 0, 0, .1);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+            }
+        }
+
+        @-o-keyframes animateTwo {
+            0% {
+                -webkit-transform: translateZ(0px);
+                transform: translateZ(0px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            }
+
+            100% {
+                -webkit-transform: translateZ(2000px);
+                transform: translateZ(2000px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                border: 0 5px 15px rgba(0, 0, 0, .1);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+            }
+        }
+
+        @-ms-keyframes animateTwo {
+            0% {
+                -webkit-transform: translateZ(0px);
+                transform: translateZ(0px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            }
+
+            100% {
+                -webkit-transform: translateZ(2000px);
+                transform: translateZ(2000px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                border: 0 5px 15px rgba(0, 0, 0, .1);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+            }
+        }
+
+        @keyframes animateTwo {
+            0% {
+                -webkit-transform: translateZ(0px);
+                transform: translateZ(0px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            }
+
+            100% {
+                -webkit-transform: translateZ(2000px);
+                transform: translateZ(2000px);
+                background: url(https://thecar.ro/wp-content/uploads/modele-disponibile/ford-mustang/FM_5.png);
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                border: 0 5px 15px rgba(0, 0, 0, .1);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+            }
+        }
+
+        /* @keyframes animatetext {
+
+            0%,
+            100% {
+                color: #fff;
+                filter: blur(2px);
+                text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff;
+            }
+
+            25%,
+            75% {
+                color: #111;
+                filter: blur(0px);
+                text-shadow: none;
+            }
+        } */
     </style>
 </head>
 
 <body>
     <section>
-        <h2>Happy Birthday Bhavya</h2>
+        <h2> <i>&#127873;</i> Happy Birthday Bhavya &#127874;</h2>
         <div class="banner">
             <div class="blocks"></div>
         </div>
