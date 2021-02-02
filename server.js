@@ -18,7 +18,7 @@ http
     //   console.log("Query:--", query);
     const queryObject = url.parse(req.url, true).query;
 
-    if (queryObject && queryObject.ab === "true") {
+    if (queryObject && queryObject.bhavya === "true") {
       res.writeHead(200, { "Content-Type": "text/html" });
       fs.readFile("./index.html", (err, fileContent) => {
         if (err) {
