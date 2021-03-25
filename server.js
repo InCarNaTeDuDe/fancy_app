@@ -16,6 +16,16 @@ http
     //   const parsed = url.parse(req.url);
     //   const query = querystring.parse(parsed.query);
     //   console.log("Query:--", query);
+
+    var route = req.url;
+    if (route === "/send") {
+      fs.appendFile('helloworld.txt', 'Thankyou!\n', function (err) {
+        if (err) return console.log(err);
+      });
+      res.write("<script>alert('Thank you')</script>"); //write a response
+      res.end(); //end the response
+    }
+
     const queryObject = url.parse(req.url, true).query;
 
     if (queryObject && queryObject.bhavya === "true") {
